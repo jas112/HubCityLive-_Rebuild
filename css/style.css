@@ -913,16 +913,17 @@ figure{
 
 .videoContainer{
   margin: 0 auto;
-  padding: 200px 0px 0px 0px;
+  padding: 145px 0px 0px 0px;
   text-align: center;
+/*  outline: 2px solid yellow;*/
 }
 
 video{
   -webkit-filter: drop-shadow(0px 8px 5px #80FFE5);
   filter: drop-shadow(0px 8px 5px #80FFE5);
-  width: 85%;
+  width: 80%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /*#redQuartzVideo{
@@ -1034,4 +1035,25 @@ footer li{
   top: -600px;
   left: 40%;
   transition: all 10s ease-in-out;
+}
+
+.contactLinkContainer{
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.contactLink{
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.contactLink:hover{
+  cursor: pointer;
+}
+
+.contactLinkImage{
+  margin:0px 0px 0px 0px;
+
 }
