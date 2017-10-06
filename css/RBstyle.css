@@ -1,0 +1,18 @@
+*{
+  outline: yellow;
+}
+
+body{
+  background: black;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  /*background-image: url(../images/header-bg4.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 110% auto;*/
+}
