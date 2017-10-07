@@ -46,7 +46,7 @@ document.body.appendChild(stats.domElement);
 				},
 				width: window.innerWidth,
 				height: window.innerHeight,
-				velocity: 0.1,
+				velocity: 0.7,
 				length: 100,
 				distance: 120,
 				radius: 150,
@@ -201,11 +201,11 @@ document.body.appendChild(stats.domElement);
 // Init plugin
 $('canvas').constellation({
 	star: {
-		width: 2,
-		color:'rgba(110, 154, 207,1)'
+		width: 3,
+		color:'rgba(255, 255, 255,1)'
 	},
 	line: {
-		color: 'rgba(110, 154, 207,1)'
+		color: 'rgba(255, 255, 255,1)'
 	},
-	radius: 250
+	radius: 270
 });
