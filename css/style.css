@@ -20,10 +20,20 @@
     src: url(../fonts/neuropolxrg.ttf);
 }
 
+@font-face {
+    font-family: alienleague;
+    src: url(../fonts/alienleague.ttf);
+}
+
+@font-face {
+    font-family: alienleaguebold;
+    src: url(../fonts/alienleaguebold.ttf);
+}
+
 body{
 	height: 100%;
 	width: 100%;
-    font-family: 'neuropolxrg', serif;
+    font-family: 'alienleague', serif;
     background: #111 !important;
     overflow-x:hidden;
     color: #eee;
@@ -60,8 +70,8 @@ background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transpare
 .blue-grad {
     background: -webkit-linear-gradient(#E0EAFC ,#CFDEF3);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'neuropolxrg', serif;
+    /*-webkit-text-fill-color: transparent;*/
+    font-family: 'alienleague', serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -73,6 +83,15 @@ background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transpare
     height:70px;
     width:60%;
 }
+
+p{
+    font-family: 'alienleaguebold', serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 5px 5px 9px black;
+    text-transform: uppercase;
+}
+
 .text-details{
 	width: 80%;
 	margin: 0 auto;
@@ -83,7 +102,7 @@ background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transpare
 }
 .text-heading{
 	text-transform: uppercase;
-	font-family: 'neuropolxrg', serif;
+	font-family: 'alienleague', serif;
 	font-weight: 900;
 }
 .plan-btn{
@@ -725,12 +744,12 @@ nav.page-navigation{
 
 #navbar_title{
   padding-left:10%;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .link_caption{
   position: relative;
-  top: 14px;
+  top: 10px;
   right: 0px;
   color: #00BDFD;
   font-size: 9px;
@@ -743,7 +762,7 @@ nav.page-navigation{
 #nlink_1:hover + #lcap_1{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black;
   transition: all 1s ease-in-out;
 }
@@ -751,7 +770,7 @@ nav.page-navigation{
 #nlink_2:hover + #lcap_2{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black;
   transition: all 1s ease-in-out;
 }
@@ -759,7 +778,7 @@ nav.page-navigation{
 #nlink_3:hover + #lcap_3{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black;
   transition: all 1s ease-in-out;
 }
@@ -767,7 +786,7 @@ nav.page-navigation{
 #nlink_4:hover + #lcap_4{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black;
   transition: all 1s ease-in-out;
 }
@@ -775,7 +794,7 @@ nav.page-navigation{
 #nlink_5:hover + #lcap_5{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black;
   transition: all 1s ease-in-out;
 }
@@ -783,7 +802,7 @@ nav.page-navigation{
 #nlink_6:hover + #lcap_6{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black; 
   transition: all 1s ease-in-out;
 }
@@ -791,7 +810,7 @@ nav.page-navigation{
 #nlink_7:hover + #lcap_7{
   opacity: 1;
   margin-left: 1%;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 5px 5px 5px black;
   transition: all 1s ease-in-out;
 }
@@ -830,7 +849,7 @@ nav.page-navigation .current a{
 }
 
 nav.page-navigation .current .navImage{
-  background-image: url(../images/button6B.png);
+  background-image: url(../images/button7B.png);
 }
 
 nav.page-navigation a:hover{
@@ -860,7 +879,7 @@ nav.page-navigation a:hover{
 .navImage{
   width: 50px;
   height: 50px;
-  background-image: url(../images/button6A.png);
+  background-image: url(../images/button7A.png);
   background-size: 50px auto;
   background-repeat: no-repeat;
   display: inline-block;
@@ -1164,8 +1183,8 @@ footer{
 #aboutElementLeft{
   opacity: 0;
   position: relative;
-  left: -4%;
-  transition: all 1s ease-in-out; 
+  left: -30%;
+  transition: all .5s ease-in-out; 
 }
 
 #aboutElementLeft.activated{
@@ -1173,13 +1192,13 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   left: 0%;
-  transition: all 1s ease-in-out;}
+  transition: all .5s ease-in-out;}
 
 #aboutElementRight{
   opacity: 0;
   position: relative;
-  right: -1%;
-  transition: all 1s ease-in-out;
+  right: -30%;
+  transition: all .5s ease-in-out;
 }
 
 #aboutElementRight.activated{
@@ -1187,15 +1206,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   right: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #businessPlanElementLeft{
   opacity: 0;
   position: relative;
-  left: -1%;
-  transition: all 1s ease-in-out; 
+  left: -30%;
+  transition: all .5s ease-in-out; 
 }
 
 #businessPlanElementLeft.activated{
@@ -1203,15 +1222,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   left: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #businessPlanElementRight{
   opacity: 0;
   position: relative;
-  right: -1%;
-  transition: all 1s ease-in-out;
+  right: -30%;
+  transition: all .5s ease-in-out;
 }
 
 #businessPlanElementRight.activated{
@@ -1219,15 +1238,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   right: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #schematicsElementLeft{
   opacity: 0;
   position: relative;
-  left: -1%;
-  transition: all 1s ease-in-out; 
+  left: -30%;
+  transition: all .5s ease-in-out; 
 }
 
 #schematicsElementLeft.activated{
@@ -1235,15 +1254,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   left: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #schematicsElementRight{
   opacity: 0;
   position: relative;
-  right: -1%;
-  transition: all 1s ease-in-out;
+  right: -30%;
+  transition: all .5s ease-in-out;
 }
 
 #schematicsElementRight.activated{
@@ -1251,15 +1270,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   right: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #modelElementLeft{
   opacity: 0;
   position: relative;
-  left: -1%;
-  transition: all 1s ease-in-out; 
+  left: -30%;
+  transition: all .5s ease-in-out; 
 }
 
 #modelElementLeft.activated{
@@ -1267,15 +1286,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   left: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #modelElementRight{
   opacity: 0;
   position: relative;
-  right: -1%;
-  transition: all 1s ease-in-out;
+  right: -30%;
+  transition: all .5s ease-in-out;
 }
 
 #modelElementRight.activated{
@@ -1283,7 +1302,7 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   right: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
@@ -1291,8 +1310,8 @@ footer{
 #purposeElementCenter{
   opacity: 0;
   position: relative;
-  bottom: -3%;
-  transition: all 1s ease-in-out;
+  bottom: -30%;
+  transition: all .5s ease-in-out;
 }
 
 #purposeElementCenter.activated{
@@ -1300,15 +1319,15 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   bottom: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
 #contactElementCenter{
   opacity: 0;
   position: relative;
-  bottom: -6%;
-  transition: all 1s ease-in-out;
+  bottom: -30%;
+  transition: all .5s ease-in-out;
 }
 
 #contactElementCenter.activated{
@@ -1316,5 +1335,5 @@ footer{
   text-shadow: 5px 5px 5px black;
   position: relative;
   bottom: 0%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
