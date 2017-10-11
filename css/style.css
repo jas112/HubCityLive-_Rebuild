@@ -738,9 +738,9 @@ nav.page-navigation{
   /*border-top-right-radius: 40px;*/
   /*border-bottom-right-radius: 40px;*/
   /*border-bottom: 10px dotted #00BDFD;*/
-/*  background-image: url(../images/menuGlassGC.png);
+  background-image: url(../images/menuGlassGC.png);
   background-size: auto 100%;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   z-index: 10;
   /*outline: 10px dotted yellow;*/
 }
@@ -758,7 +758,7 @@ nav.page-navigation{
   text-transform: uppercase;  
   text-shadow: 5px 5px 5px black;
   font-size: 15px;
-  color: #00BDFD;
+  /*color: #00BDFD;*/
 }
 
 .link_caption{
