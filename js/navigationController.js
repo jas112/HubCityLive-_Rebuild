@@ -12,5 +12,5 @@ $('#footer').click(function(){
       'id': 'footer',
       'data-swapped': init
   });
-  $('#navigation').slideToggle('slow');
+  $('#navigation').fadeToggle('slow');
 })

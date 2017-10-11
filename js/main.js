@@ -202,10 +202,10 @@ document.body.appendChild(stats.domElement);
 $('canvas').constellation({
 	star: {
 		width: 3,
-		color:'rgba(238, 238, 238,1)'
+		color:'rgba(105, 213, 244,1)'
 	},
 	line: {
-		color: 'rgba(238, 238, 238,1)'
+		color: 'rgba(105, 213, 244,1)'
 	},
 	radius: 270
 });
