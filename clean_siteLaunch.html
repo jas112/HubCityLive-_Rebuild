@@ -68,14 +68,14 @@
         $('#runnerPrime').runner({
           autostart:true,
           countdown: true,
-          startAt: 5 * 1000,
+          startAt: 3 * 1000,
           stopAt: 0,
           milliseconds: false
         });
         $('#runner').runner({
           autostart:true,
           countdown: true,
-          startAt: 5 * 1000,
+          startAt: 2 * 1000,
           stopAt: 0
         }).on('runnerFinish', function(eventObject, info) {
           $('#launchPageTitle').addClass('revealTitle');

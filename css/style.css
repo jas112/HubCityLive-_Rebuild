@@ -626,12 +626,12 @@ but you could also use a gif to better handle ie8*/
   top: -80px;
   opacity: 0;
   margin: 0px;
-  transition: all 10s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 #launchPageTitle.revealTitle{
   opacity: 1;
-  transition: all 10s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 #kenburns-slideshow.partialOpacity{
