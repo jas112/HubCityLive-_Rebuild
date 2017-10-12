@@ -1017,14 +1017,39 @@ footer li{
   display: inline-block;
 }
 
-footer{
+#footer{
+  opacity: 0;
   overflow: hidden;
   position: fixed;
   bottom: 0px;
   padding: 0px 0px 0px 0px;
   text-align: center;
+  z-index: 500;
+  transition: all 0.5s ease-in-out;
 }
 
+#footer.revealFooter{
+  opacity: 1;
+  z-index: 1000;
+  transition: all 0.25s ease-in-out;
+}
+
+#footerOverlay{
+  opacity: 1;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  z-index: 1000;
+  transition: all 0.25s ease-in-out;
+}
+
+#footerOverlay.obscureFooter{
+  opacity: 0;
+  z-index: 500;
+  transition: all 0.5s ease-in-out;
+}
 
 #runnerPrime{
   opacity: 1;

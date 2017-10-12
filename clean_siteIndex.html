@@ -273,7 +273,8 @@
         <li ><a href="#contact" id="nlink_7" class="onPageLink"><div class="navImage"></div></a><span class="link_caption" id="lcap_7"> CONTACT</span></li>
       </div>
     </nav>
-    <img id="footer" src="images/footerControlPanelOnZ4.png" data-swap="images/footerControlPanelOffZ4.png" data-src="images/footerControlPanelOnZ4.png" data-swapped="false" class="img-responsive footer-img" alt="">
+    <img id="footer" src="images/footerControlPanelOnZ4.png" data-swap="images/footerControlPanelOffZ4.png" data-src="images/footerControlPanelOnZ4.png" data-swapped="false" class="img-responsive footer-img" alt="control panel footer">
+    <img id="footerOverlay" src="images/footerControlHubcityLive.png" class="img-responsive footer-img" alt="hubcity footer">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
@@ -360,8 +361,12 @@
           if (y > height) {
             $('#kenburns-slideshow').addClass('partialOpacity');
             $('#kenburns-slideshow').css('position','fixed');
+            $('#footerOverlay').addClass('obscureFooter');
+            $('#footer').addClass('revealFooter');
           } else {
             $('#kenburns-slideshow').removeClass('partialOpacity');
+            $('#footerOverlay').removeClass('obscureFooter');
+            $('#footer').removeClass('revealFooter');
           }
         });
     </script>
