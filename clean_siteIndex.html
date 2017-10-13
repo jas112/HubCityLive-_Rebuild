@@ -18,7 +18,8 @@
     <div id="top"></div>
     <div id="left"></div>
     <div id="right"></div>
-    <img id="header" src="images/header-bg4.png" class="img-responsive header-img" alt="">
+    <img id="headerFirst" src="images/header-bg4.png" class="img-responsive" alt="">
+    <img id="headerSecond" src="images/headerX3.png" class="img-responsive" alt="">
     <div class="container-fluid no-pad">
       <!-- LANDING -->
       <div class="row no-pad mai-bg" style="padding-bottom: 50px; padding-bottom: 50px; background-image: url(images/bg10B.png);background-size:cover;">
@@ -273,7 +274,7 @@
         <li ><a href="#contact" id="nlink_7" class="onPageLink"><div class="navImage"></div></a><span class="link_caption" id="lcap_7"> CONTACT</span></li>
       </div>
     </nav>
-    <img id="footer" src="images/footerControlPanelOnZ4.png" data-swap="images/footerControlPanelOffZ4.png" data-src="images/footerControlPanelOnZ4.png" data-swapped="false" class="img-responsive footer-img" alt="control panel footer">
+    <img id="footer" src="images/footerControlPanelOnZ5A.png" data-swap="images/footerControlPanelOffZ5B.png" data-src="images/footerControlPanelOnZ5A.png" data-swapped="false" class="img-responsive footer-img" alt="control panel footer">
     <img id="footerOverlay" src="images/footerControlHubcityLive.png" class="img-responsive footer-img" alt="hubcity footer">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
@@ -361,10 +362,14 @@
           if (y > height) {
             $('#kenburns-slideshow').addClass('partialOpacity');
             $('#kenburns-slideshow').css('position','fixed');
+            $('#headerFirst').addClass('obscureHeader');
+            $('#headerSecond').addClass('revealHeader');
             $('#footerOverlay').addClass('obscureFooter');
             $('#footer').addClass('revealFooter');
           } else {
             $('#kenburns-slideshow').removeClass('partialOpacity');
+            $('#headerFirst').removeClass('obscureHeader');
+            $('#headerSecond').removeClass('revealHeader');
             $('#footerOverlay').removeClass('obscureFooter');
             $('#footer').removeClass('revealFooter');
           }
