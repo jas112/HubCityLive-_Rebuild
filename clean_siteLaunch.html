@@ -18,7 +18,7 @@
     <div id="top"></div>
     <div id="left"></div>
     <div id="right"></div>
-    <img id="header" src="images/headerX4.png" class="img-responsive header-img" alt="">
+    <img id="header" src="images/header-bg4.png" class="img-responsive header-img" alt="">
     <div class="container-fluid no-pad" style="height: 100%;">
       <!-- LANDING -->
       <div class="row no-pad mai-bg">
@@ -42,6 +42,7 @@
       <div class="row no-pad mai-bg" id="titleElement">
           <h1 id="runner" style="display: none;"></h1>
           <h1 id="runner2" style="display: none;"></h1>
+          <h1 id="runner3" style="display: none;"></h1>
 <!--           <div id="portal">
            <div class="sceneFrame">
              <img src="images/L0B3.jpg" id="bgElement" alt="bg_image">
@@ -66,7 +67,8 @@
 <!--           <h1 id="runnerPrime" style="color: white;"></h1> -->
         </div>
       </div>
-      <a href="clean_siteIndex.html" class="siteIndexLink"><img id="launchFooter" src="images/footerWelcomeZ8.png" class="img-responsive launchFooterImg" alt=""></a>
+      <a href="clean_siteIndex.html" class="siteIndexLink"><img id="launchFooterImg" src="images/footerWelcomeZ15.png" class="img-responsive" alt=""></a>
+      <a href="clean_siteIndex.html" class="siteIndexLink"><img id="launchFooterImgOverlay" src="images/footerLandingZ1.png" class="img-responsive" alt=""></a>
     </div>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
@@ -102,8 +104,18 @@
                 startAt: 5 * 1000,
                 stopAt: 0
             }).on('runnerFinish', function(eventObject, info) {
+                $('#launchFooterImg').addClass('obscureFooter');
+                $('#launchFooterImgOverlay').addClass('revealFooter');
+                var url = "clean_siteIndex.html";
+                $('#runner3').runner({
+                autostart:true,
+                countdown: true,
+                startAt: 2 * 1000,
+                stopAt: 0
+            }).on('runnerFinish', function(eventObject, info) {
               $(location).attr('href', url);
             });
+          });
         });
       });
     </script>
