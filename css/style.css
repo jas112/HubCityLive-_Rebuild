@@ -670,7 +670,7 @@ but you could also use a gif to better handle ie8*/
 #hudElementLeft{
  position: absolute;
   top: 0px;
-  left: 50%;
+  left: 75%;
   width: auto;
   height: 100%;
   z-index: 0;
@@ -679,7 +679,7 @@ but you could also use a gif to better handle ie8*/
 #hudElementRight{
  position: absolute;
   top: 0px;
-  right: 50%;
+  right: 75%;
   width: auto;
   height: 100%;
   z-index: 0;
