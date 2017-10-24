@@ -648,6 +648,48 @@ but you could also use a gif to better handle ie8*/
   z-index: 0;
 }
 
+#hudDisplay{
+  opacity: .5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#hudBase{
+ position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#hudElementLeft{
+ position: absolute;
+  top: 0px;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+}
+
+#hudElementRight{
+ position: absolute;
+  top: 0px;
+  right: 50%;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+}
+
+.hudElement{
+  width:100%;
+  height: auto;
+}
+
 #titleElement{
   position: absolute;
   top: 0px;
