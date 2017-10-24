@@ -676,6 +676,24 @@ but you could also use a gif to better handle ie8*/
   z-index: 0;
 }
 
+#hudElementLeft2{
+ position: absolute;
+  top: 0px;
+  left: 75%;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+}
+
+#hudElementLeft3{
+ position: absolute;
+  top: 0px;
+  left: 75%;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+}
+
 #hudElementRight{
  position: absolute;
   top: 0px;
@@ -685,6 +703,23 @@ but you could also use a gif to better handle ie8*/
   z-index: 0;
 }
 
+#hudElementRight2{
+ position: absolute;
+  top: 0px;
+  right: 75%;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+}
+
+#hudElementRight3{
+ position: absolute;
+  top: 0px;
+  right: 75%;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+}
 .hudElement{
   width:100%;
   height: auto;
