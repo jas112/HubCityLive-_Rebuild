@@ -13,4 +13,12 @@ $('#footer').click(function(){
       'data-swapped': init
   });
   $('#navigation').fadeToggle('slow');
-})
+  $('#aboutElementLeft').toggleClass('noMenu');
+  $('#aboutElementRight').toggleClass('noMenu');
+  $('#businessPlanElementLeft').toggleClass('noMenu');
+  $('#businessPlanElementRight').toggleClass('noMenu');
+  $('#schematicsElementLeft').toggleClass('noMenu');
+  $('#schematicsElementRight').toggleClass('noMenu');
+  $('#modelElementLeft').toggleClass('noMenu');
+  $('#modelElementRight').toggleClass('noMenu');
+});
