@@ -28,5 +28,4 @@ $(window).scroll(function(){
     // 'transform': 'translate(0px, -'+ winScroll/46 +'%)'
     'transform': 'rotate(-'+ winScroll/15 +'deg)'
   });
-
 });

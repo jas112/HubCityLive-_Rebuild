@@ -31,6 +31,15 @@
           <!-- <div id="kenburns-slideshow"></div> -->
         </div>
       </div>
+      <div id="hudDisplay">
+        <img src="images/HCL_CSHUD1.png" alt="control screen base" id="hudBase" class="hudElement">
+        <img src="images/HCL_CSHUD2B.png" alt="control screen left element" id="hudElementLeft" class="hudElement">
+        <img src="images/HCL_CSHUD3.png" alt="control screen left element 2" id="hudElementLeft2" class="hudElement">
+        <img src="images/HCL_CSHUD4.png" alt="control screen left element 3" id="hudElementLeft3" class="hudElement"> 
+        <img src="images/HCL_CSHUD2B.png" alt="control screen right element" id="hudElementRight" class="hudElement">
+        <img src="images/HCL_CSHUD3.png" alt="control screen right element 2" id="hudElementRight2" class="hudElement">
+        <img src="images/HCL_CSHUD4.png" alt="control screen right element 3" id="hudElementRight3" class="hudElement"> 
+      </div>
       <!-- <img id="screenTexture" src="images/glassScreenC.png" class="img-responsive"> -->
       <img id="leftTexture" src="images/screenGlassLeftL.png" class="img-responsive">
       <video src="videos/bgVideo.mov" type="video/mp4" id="virtualLaunch" preload="auto" autoplay="true" loop="true" width="100%" height="800px" poster="../logo/Renderings/1_00000.jpg">
@@ -76,6 +85,7 @@
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.runner.js"></script>
+    <script type="text/javascript" src="js/QTransform.js"></script>
     <!-- <script type="text/javascript" src="js/launchScreenController.js"></script> -->
     <script type="text/javascript">
       $(document).ready(function(){
@@ -92,9 +102,15 @@
           startAt: 1 * 1000,
           stopAt: 0
         }).on('runnerFinish', function(eventObject, info) {
+            $('#hudElementLeft').delay(300).animate({rotate: '-180deg'}, 1000);
+            $('#hudElementLeft2').delay(300).animate({rotate: '180deg'}, 1000);
+            $('#hudElementLeft3').delay(300).animate({rotate: '-360deg'}, 1000);  
+            $('#hudElementRight').delay(300).animate({rotate: '180deg'}, 1000);
+            $('#hudElementRight2').delay(300).animate({rotate: '-180deg'}, 1000);
+            $('#hudElementRight3').delay(300).animate({rotate: '360deg'}, 1000); 
           $('#launchPageTitle').addClass('revealTitle');
-          $('#starElement').addClass('translate');
-          $('#planetElement').addClass('translate');
+          // $('#starElement').addClass('translate');
+          // $('#planetElement').addClass('translate');
           // $('#planetElement2').addClass('translate');
           // $('#runnerPrime').addClass('hide');
           var url = "clean_siteIndex.html";
