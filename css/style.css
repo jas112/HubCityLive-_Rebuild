@@ -1143,8 +1143,8 @@ figure{
 }
 
 video{
-  -webkit-filter: drop-shadow(0px 8px 5px #80FFE5);
-  filter: drop-shadow(0px 8px 5px #80FFE5);
+  /*-webkit-filter: drop-shadow(0px 8px 5px #80FFE5);*/
+  /*filter: drop-shadow(0px 8px 5px #80FFE5);*/
   width: 75%;
   height: auto;
   border-radius: 10px;
