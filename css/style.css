@@ -660,10 +660,10 @@ but you could also use a gif to better handle ie8*/
 }
 
 #hudBase{
-/* position: absolute;
+ position: absolute;
   top: 0px;
-  left: 0px;*/
-  width:auto;
+  left: 0px;
+  width:100%;
   height: 100%;
   z-index: 0;
 }
