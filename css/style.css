@@ -30,6 +30,23 @@
     src: url(../fonts/alienleaguebold.ttf);
 }
 */
+
+
+@media only screen and (max-width: 320px) {
+  #hudBase{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #hudBase{
+
+  }
+
+}
+
+
+
 body{
 	height: 100%;
 	width: 100%;
@@ -649,6 +666,8 @@ but you could also use a gif to better handle ie8*/
 }
 
 #hudDisplay{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   opacity: .5;
   position: fixed;
   top: 0px;
@@ -665,6 +684,7 @@ but you could also use a gif to better handle ie8*/
   padding: 0px 0px 0px 0px;
   width: 100%;
   height: 100%;
+  font-size: 0px;
   text-align: center;
   position: absolute;
   top: 0px;
@@ -673,6 +693,11 @@ but you could also use a gif to better handle ie8*/
 
 #hudGrid0{
   opacity: .3;
+}
+
+#hudBase{
+  height: 100%;
+  width: auto;
 }
 
 /*#hudBase{
