@@ -42,13 +42,14 @@
       </div> -->
       <!-- <img id="screenTexture" src="images/glassScreenC.png" class="img-responsive"> -->
       <img id="leftTexture" src="images/screenGlassLeftL.png" class="img-responsive">
-      <video src="videos/bgVideo.mov" type="video/mp4" id="virtualLaunch" preload="auto" autoplay="true" loop="true" width="100%" height="800px" poster="../logo/Renderings/1_00000.jpg">
+      <video src="videos/bgVideo.mov" type="video/mp4" id="virtualLaunch" preload="auto" autoplay="true" loop="true" width="100%" height="auto" poster="../logo/Renderings/1_00000.jpg">
         <!-- <source src="videos/launchPageVD2.mp4" type="video/mp4" /> -->
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
       </video>
       <!-- <img id="screenGlass" src="images/screenGlassComp4.png" class="img-responsive" alt="">  -->
       <!-- <img id="rightTexture" src="images/screenGlassRight.png" class="img-responsive">        -->
       <div class="row no-pad mai-bg" id="titleElement">
+          <h1 id="runnerPrime" style="display: none;"></h1>
           <h1 id="runner" style="display: none;"></h1>
           <h1 id="runner2" style="display: none;"></h1>
           <h1 id="runner3" style="display: none;"></h1>
@@ -67,6 +68,15 @@
            </div>
           </div> -->
           <!-- <img id="launchPageScreen" src="images/glassScreenBD.png" class="img-responsive" alt=""> -->
+          <div class="hudFrame">
+            <img src="images/hudElementGrid0.png" alt="control screen grid A" id="hudGridAL" class="hudElement1">
+          </div>
+          <div class="hudFrame">
+            <img src="images/hudElementGridBR.png" alt="control screen grid BRL" id="hudGridBRL" class="hudElement1">
+          </div> 
+          <div class="hudFrame">
+            <img src="images/hudElementCC.png" alt="control screen cntrc" id="hudCenterCircleL" class="hudElement2">
+          </div> 
           <div class="sceneFrame">
             <img id="launchPageTitle" src="images/hubcity_page_title_Xolo9.png" class="img-responsive" alt="">
           </div>
@@ -74,7 +84,6 @@
             <img id="screenGlass" src="images/screenGlassComp4.png" class="img-responsive" alt="">
           </div> -->
 <!--           <h1 id="runnerPrime" style="color: white;"></h1> -->
-        </div>
       </div>
       <a href="clean_siteIndex.html" class="siteIndexLink"><img id="launchFooterImg" src="images/footerWelcomeAboard.png" class="img-responsive" alt=""></a>
       <a href="clean_siteIndex.html" class="siteIndexLink"><img id="launchFooterImgOverlay" src="images/footerLandingZ1.png" class="img-responsive" alt=""></a>
@@ -89,49 +98,54 @@
     <!-- <script type="text/javascript" src="js/launchScreenController.js"></script> -->
     <script type="text/javascript">
       $(document).ready(function(){
+        $('#hudGridBRL').delay(300).animate({translateY: -500}, 10000)
         $('#runnerPrime').runner({
           autostart:true,
           countdown: true,
-          startAt: 3 * 1000,
+          startAt: 2 * 1000,
           stopAt: 0,
           milliseconds: false
-        });
-        $('#runner').runner({
-          autostart:true,
-          countdown: true,
-          startAt: 1 * 1000,
-          stopAt: 0
         }).on('runnerFinish', function(eventObject, info) {
-            $('#hudElementLeft').delay(300).animate({rotate: '-180deg'}, 1000);
-            $('#hudElementLeft2').delay(300).animate({rotate: '180deg'}, 1000);
-            $('#hudElementLeft3').delay(300).animate({rotate: '-360deg'}, 1000);  
-            $('#hudElementRight').delay(300).animate({rotate: '180deg'}, 1000);
-            $('#hudElementRight2').delay(300).animate({rotate: '-180deg'}, 1000);
-            $('#hudElementRight3').delay(300).animate({rotate: '360deg'}, 1000); 
-          $('#launchPageTitle').addClass('revealTitle');
-          // $('#starElement').addClass('translate');
-          // $('#planetElement').addClass('translate');
-          // $('#planetElement2').addClass('translate');
-          // $('#runnerPrime').addClass('hide');
-          var url = "clean_siteIndex.html";
-           $('#runner2').runner({
-                autostart:true,
-                countdown: true,
-                startAt: 5 * 1000,
-                stopAt: 0
-            }).on('runnerFinish', function(eventObject, info) {
-                $('#launchFooterImg').addClass('obscureFooter');
-                $('#launchFooterImgOverlay').addClass('revealFooter');
-                var url = "clean_siteIndex.html";
-                $('#runner3').runner({
-                autostart:true,
-                countdown: true,
-                startAt: 2 * 1000,
-                stopAt: 0
-            }).on('runnerFinish', function(eventObject, info) {
-              $(location).attr('href', url);
+          $('#hudCenterCircleL').animate({rotate: '-180deg'}, 1000);
+          // $('#hudCenterCircleL').addClass('obscureCircle');
+          $('#runner').runner({
+            autostart:true,
+            countdown: true,
+            startAt: 2 * 1000,
+            stopAt: 0
+          }).on('runnerFinish', function(eventObject, info) {
+              // $('#hudElementLeft').delay(300).animate({rotate: '-180deg'}, 1000);
+              // $('#hudElementLeft2').delay(300).animate({rotate: '180deg'}, 1000);
+              // $('#hudElementLeft3').delay(300).animate({rotate: '-360deg'}, 1000);  
+              // $('#hudElementRight').delay(300).animate({rotate: '180deg'}, 1000);
+              // $('#hudElementRight2').delay(300).animate({rotate: '-180deg'}, 1000);
+              // $('#hudElementRight3').delay(300).animate({rotate: '360deg'}, 1000);
+            $('#hudCenterCircleL').addClass('obscureCircle'); 
+            $('#launchPageTitle').addClass('revealTitle');
+            // $('#starElement').addClass('translate');
+            // $('#planetElement').addClass('translate');
+            // $('#planetElement2').addClass('translate');
+            // $('#runnerPrime').addClass('hide');
+            var url = "clean_siteIndex.html";
+             $('#runner2').runner({
+                  autostart:true,
+                  countdown: true,
+                  startAt: 5 * 1000,
+                  stopAt: 0
+              }).on('runnerFinish', function(eventObject, info) {
+                  $('#launchFooterImg').addClass('obscureFooter');
+                  $('#launchFooterImgOverlay').addClass('revealFooter');
+                  var url = "clean_siteIndex.html";
+                  $('#runner3').runner({
+                  autostart:true,
+                  countdown: true,
+                  startAt: 2 * 1000,
+                  stopAt: 0
+              }).on('runnerFinish', function(eventObject, info) {
+                $(location).attr('href', url);
+              });
             });
-          });
+          });   
         });
       });
     </script>

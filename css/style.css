@@ -32,15 +32,16 @@
 */
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 499px) and (min-width: 500px)  {
   #hudBase{
-    display: none;
+  height: 100%;
+  width: 100%;
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 700px) and (min-width: 500px) {
   #hudBase{
-
+    display: none;
   }
 
 }
@@ -193,6 +194,7 @@ opacity:0.7;
 #launchFooterImg.obscureFooter{
   opacity: 0;
   z-index: 0;
+  transition: all 1s ease-in-out;
 }
 
 
@@ -204,7 +206,7 @@ opacity:0.7;
   z-index: 3000;
   bottom: 0px;
   z-index: 0;
-
+  transition: all 1s ease-in-out;
 }
 
 #launchFooterImgOverlay.revealFooter{
@@ -695,9 +697,27 @@ but you could also use a gif to better handle ie8*/
   opacity: .3;
 }
 
+#hudGridAL{
+  opacity: .5;
+}
+
+#hudGridBRL{
+  opacity: .8;
+}
+
 #hudBase{
   height: 100%;
   width: auto;
+}
+
+#hudCenterCircleL{
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+#hudCenterCircleL.obscureCircle{
+  opacity: 0;
+  transition: all 3s ease-in-out;
 }
 
 /*#hudBase{
@@ -708,8 +728,8 @@ but you could also use a gif to better handle ie8*/
   height: 100%;
   z-index: 0;
 }*/
-
-/*#hudElementLeft{
+/*
+#hudElementLeft{
  position: absolute;
   top: 0px;
   left: 75%;
@@ -762,6 +782,7 @@ but you could also use a gif to better handle ie8*/
   height: 100%;
   z-index: 0;
 }*/
+
 .hudElement1{
   width:100%;
   height: auto;
@@ -773,6 +794,7 @@ but you could also use a gif to better handle ie8*/
 }
 
 #titleElement{
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
