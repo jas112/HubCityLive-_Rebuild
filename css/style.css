@@ -720,6 +720,10 @@ but you could also use a gif to better handle ie8*/
   transition: all 3s ease-in-out;
 }
 
+.triElement{
+  opacity: .5;
+}
+
 /*#hudBase{
  position: absolute;
   top: 0px;

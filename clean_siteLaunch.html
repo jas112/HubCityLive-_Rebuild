@@ -77,6 +77,18 @@
           <div class="hudFrame">
             <img src="images/hudElementCC.png" alt="control screen cntrc" id="hudCenterCircleL" class="hudElement2">
           </div> 
+          <div class="hudFrame">
+            <img src="images/hudElementTriA.png" alt="control screen cntrc" id="hudCTri2" class="hudElement2 triElement">
+          </div> 
+          <div class="hudFrame">
+            <img src="images/hudElementTriA2.png" alt="control screen cntrc" id="hudTri1" class="hudElement2 triElement">
+          </div> 
+<!--           <div class="hudFrame">
+            <img src="images/hudElementTriA.png" alt="control screen cntrc" id="hudTri1B" class="hudElement2 triElement">
+          </div> 
+          <div class="hudFrame">
+            <img src="images/hudElementTriA.png" alt="control screen cntrc" id="hudTri1C" class="hudElement2 triElement">
+          </div>  -->
           <div class="sceneFrame">
             <img id="launchPageTitle" src="images/hubcity_page_title_Xolo9.png" class="img-responsive" alt="">
           </div>
@@ -107,6 +119,10 @@
           milliseconds: false
         }).on('runnerFinish', function(eventObject, info) {
           $('#hudCenterCircleL').animate({rotate: '-180deg'}, 1000);
+          $('#hudTri1').animate({rotate: '-180deg'}, 1000);
+          // $('#hudTri1').animate({rotate: '-90deg'}, 1000);
+          // $('#hudTri1B').animate({rotate: '-180deg'}, 1000);
+          // $('#hudTri1C').animate({rotate: '-270deg'}, 1000);
           // $('#hudCenterCircleL').addClass('obscureCircle');
           $('#runner').runner({
             autostart:true,
