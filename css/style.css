@@ -721,8 +721,9 @@ but you could also use a gif to better handle ie8*/
   transition: all 3s ease-in-out;
 }
 
-.triElement{
-  opacity: .5;
+#hudTri2
+{
+  opacity: 1;
 }
 
 /*#hudBase{
