@@ -1236,6 +1236,16 @@ video{
   opacity: .5;
 }
 
+#virtualLaunchOver{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  opacity: .25;
+}
+
 /*#redQuartzVideo{
   -webkit-filter: drop-shadow(0px 8px 5px #C21655);
   filter: drop-shadow(0px 8px 5px #C21655);
