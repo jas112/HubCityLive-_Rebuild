@@ -1234,6 +1234,18 @@ video{
   height: auto;
   z-index: 1;
   opacity: .5;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+#virtualLaunch.obscureVideo{
+  opacity: 0;
+  z-index: 0;
+  display: none;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 #virtualLaunchOver{
@@ -1242,8 +1254,20 @@ video{
   left: 0px;
   width: 100%;
   height: auto;
-  z-index: 1;
+  /* display: none; */
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+#virtualLaunchOver.revealVideo{
   opacity: .25;
+  z-index: 1;
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 /*#redQuartzVideo{
